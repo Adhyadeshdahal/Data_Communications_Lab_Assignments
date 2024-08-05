@@ -22,29 +22,8 @@ output = [output zeros(1, length(time) - length(output))];
 
 figure;
 plot(time, output, 'r');
-title('Digital Data Encoded in NRZ-L');
+title('Digital Data Encoded in unipolar');
 xlabel('Time (s)');
 ylabel('Voltage');
 grid on;
 set(gca, 'XTick', 0:1:max(time));
-
-
-
-
-pi=22/7;
-Ec = input ("Enter the carrier signal amplitude");
-fc= input("Enter the carrier signal frequency");
-wc=2*pi*fc;
-ec = Ec * sin(wc * time);
-
-ask = output .* ec;
-
-figure;
-plot(time, ask, 'b');
-title('ASK');
-xlabel('Time (s)');
-ylabel('Voltage');
-grid on;
-set(gca, 'XTick', 0:1:max(time));
-
-

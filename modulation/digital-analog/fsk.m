@@ -48,7 +48,7 @@ set(gca, 'XTick', 0:1:max(time));
 
 figure;
 plot(time, output, 'b');
-title('Digital Data Encoded in NRZ-L');
+title('Digital Data Encoded in unipolar');
 xlabel('Time (s)');
 ylabel('Voltage');
 grid on;
