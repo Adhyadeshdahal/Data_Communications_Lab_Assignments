@@ -1,3 +1,4 @@
+pkg load signal;
 frequency = 1;   
 amplitude = 5;  
 dc_bias = -3; 
